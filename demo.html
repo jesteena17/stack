@@ -9,125 +9,159 @@
         <link rel="stylesheet" href="./css/all.css">
         <link rel="stylesheet" href="./css/home.css">
         <style>
-  .footer
-  {
-    height: 337px;
-display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: .5fr 2fr .75fr 1fr 2fr 3fr;
-    position: absolute;
-    min-width: auto;
-    column-gap: 10px;
-   
-    left: 0;
-    width: 100%;
-    z-index: 5;
-    background-color: hsl(210,8%,15%);
-    
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
-    box-sizing: border-box;
-  
-    padding: 7px;
+            #grid5 {
+                display: grid;
+                grid-template-rows: auto;
+                margin-right: 20px;
+            }
 
-    padding-bottom: 53px;
+            .qnans {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-evenly;
 
-    padding-top: 20px;
+            }
 
+            .ans {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
 
-  }
-  .footer a{
-      color:hsl(210, 8%, 55%);
-      text-decoration: none;
-      cursor: pointer;
-      font-size: medium;
-    /* font-weight: 600; */
+                width: 100%;
+            }
 
-  }
+            .ans h4 {
+                font-weight: 400;
+                font-size: large;
+            }
 
+            .qns h4 {
+                font-weight: 400;
+                font-size: large;
+            }
 
+            .qns {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
 
-  .icon1 {
-    display: inline-flex;
-    align-self: center;
-}
+                width: 100%;
+            }
 
-.icon1 svg,
-.icon1 img {
-    /* height: 32px; */
-width: 37px;
-    fill: currentColor;
-}
-
-.icon1 .baseline svg,
-.icon1 img {
-    bottom: 5px;
-position: relative;
-left:30px;
-}
-   .title
-   {
-   color: hsl(210, 8%, 75%);
-   font-size:14px;
-   }    
-
-   .logos{
-    margin-left: 10px;
-    margin-top: 12px;
-   }
-.footer h4{
-    margin-block-end: 00px;
-}
-   .stack   {
-       display: grid;
-       grid-template-rows: auto;
-       height: 241px;
-   }
-   .comp
-   {
-       display: grid;
-       grid-template-rows: auto;
-       row-gap: 5px;
-       margin-left: -36px;
-   }
-   .sen  {
-       display: grid;
-       grid-template-rows: auto;
-       /* row-gap: 5px; */
-       margin-left: 25px;
-       height: 284px;
-   }
-   .prod{
-    display: grid;
-       grid-template-rows: auto;
-       height: 100px;
-row-gap: 7px;
-margin-right: 104px;
-   }
-.social{
-    margin-left: 57px;
-display: grid;
-grid-template-columns: repeat(5,1fr);
-margin-top: 22px;
-font-size: 8pt;
-column-gap: 2px;
-color: hsl(210, 8%, 55%);
-margin-right: 55px;
+            .box {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 1px;
+                border-radius: 4px;
+                /* border:1px solid rgb(189, 190, 192); */
+                padding: 5px;
+            }
 
 
-}
-.footright{
-    display: grid;
-    grid-template-rows: auto;
-    row-gap: 200px;
-}
-.footxt{
-    margin-left: 57px;
-    margin-right: 55px;
-    font-size: x-small;
-    color: hsl(210, 8%, 55%);
-}
+            .sbtn {
+                position: relative;
+                display: inline-block;
+                padding: 6px;
+                color: hsl(210, 8%, 45%);
+                border: 1px solid transparent;
+                /* border-radius: 3px; */
+                background-color: transparent;
+                outline: none;
+                font-family: inherit;
+                font-size: 13px;
+                font-weight: normal;
+                line-height: 1.15384615;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border-color: hsl(210, 8%, 65%);
 
-       </style>
+            }
+
+            .btnborderleft {
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+
+            .btnborderright {
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+
+            .btnselected {
+                border-color: hsl(210, 8%, 55%);
+                background-color: hsl(210, 8%, 90%);
+                font-weight: 600;
+            }
+
+            #filtercontents {
+                display: block;
+            }
+
+            .noborder {
+                border-left: none;
+                border-right: none;
+            }
+
+            .boxarea {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 10px;
+                align-items: center;
+                justify-items: center;
+
+            }
+
+            .barea {
+                /* width:434px; */
+                height: 67px;
+                border: 1px solid hsl(210, 8%, 65%);
+                background-color: transparent;
+                width: 100%;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: smaller;
+            }
+
+            .barea a {
+                color: blue;
+                cursor: pointer;
+            }
+
+            .boxareafull {
+                display: grid;
+                grid-template-columns: 1fr;
+                column-gap: 10px;
+                align-items: center;
+                justify-items: center;
+            }
+
+            .bareaacc {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .icon {
+                display: inline-flex;
+                align-self: center;
+            }
+
+            .icon svg,
+            .icon img {
+                height: 1em;
+                width: 1em;
+                fill: currentColor;
+            }
+
+            .icon.baseline svg,
+            .icon img {
+                top: .125em;
+                position: relative;
+            }
+        </style>
 
     </head>
 
@@ -324,13 +358,13 @@ margin-right: 55px;
 
                 </div>
 
-                <div class="summ">
+                <!-- <div class="summ">
                     <span class="s5">Summary</span>
                     <span class="s6">Summary</span>
-                </div>
+                </div> -->
                 <div id="grid3">
                     <div id="grid3a">
-
+                        <span class="s5">Summary</span>
                         <div>Answers</div>
                         <div>Questions</div>
                         <div>Tags</div>
@@ -346,7 +380,7 @@ margin-right: 55px;
                     </div>
 
                     <div id="grid3b">
-
+                        <span class="s6">Summary</span>
                         <div id="grid4">
 
 
@@ -565,100 +599,35 @@ margin-right: 55px;
 
                                 </div>
 
-                                <div class="boxareafullacc">
-                                    <div class="accnt">
-                                         <span class="icon baseline">
-                                            <svg aria-hidden="true" class="svg-icon iconLogoGlyphMd native" width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path><path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"></path></svg>
+                                <div class="boxareafull">
+                                    <div class="bareaacc">
+                                        <h4> <span class="icon baseline">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                                    viewBox="0 0 48 48">
+
+                                                    <path d="M21 527v-8h3v11H0v-11h3v8h18z" fill="#BCBBBB" />
+                                                    <path
+                                                        d="M5.4 519.1l13.6 2 .1-2.4L6 516l-.5 3zm1.8-6.8l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm3.4-5.9l10.2 8.5 1.7-2-10.2-8.5-1.7 2zm6.5-6.2l-2.1 1.6 7.9 10.6 2.1-1.6-7.9-10.6zM5 525h14v-3H5v3z"
+                                                        fill="#F48024" />
+
+                                                </svg>
+
+
+
 
                                                 &nbsp;<a>Stack Overflow</a>
                                             </span>
-                                      
-                                        
+                                        </h4>
+                                        <span>1</span>
                                     </div>
-<div><span class="one">1</span></div>
+
                                 </div>
 
                             </div>
 
 
 
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Active bounties (0)</h4>
-                                        </span>
-                                        <span class="box">
 
-                                            <span class="btnselected sbtn btnborderleft"><small>Active</small></span>
-                                            <span class="sbtn noborder"><small>Offered</small></span>
-                                            <span class="sbtn btnborderright"><small>Earned</small></span>
-                                        </span>
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafull">
-                                    <div class="barea"><span>
-                                        You have no active &nbsp;<a>bounties</a>
-                                        </span></div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Articles</h4>
-                                        </span>
-                                        <span class="box">
-
-                                            <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
-                                            <span class="sbtn noborder"><small>Activity</small></span>
-                                            <span class="sbtn noborder"><small>Newest</small></span>
-                                            <span class="sbtn btnborderright"><small>Views</small></span>
-                                        </span>
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafull">
-                                    <div class="barea"><span>
-                                        You have not created any articles.
-                                        </span></div>
-
-                                </div>
-
-                            </div>
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Votes cast</h4>
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafull">
-                                    <div class="barea"><span>
-                                        You have not cast any &nbsp;<a>votes</a>
-                                        </span></div>
-
-                                </div>
-
-                            </div>
-
-
-<div class="feed">
-    <svg aria-hidden="true" class="fc-orange-400 svg-icon iconRss" width="18" height="18" viewBox="0 0 18 18"><path d="M1 3c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v12c0 1.09-.91 2-2 2H3c-1.09 0-2-.91-2-2V3Zm14.5 12C15.5 8.1 9.9 2.5 3 2.5V5a10 10 0 0 1 10 10h2.5Zm-5 0A7.5 7.5 0 0 0 3 7.5V10a5 5 0 0 1 5 5h2.5Zm-5 0A2.5 2.5 0 0 0 3 12.5V15h2.5Z"></path></svg>
-<a href="">User feed</a>
-</div>
 
                         </div>
 
@@ -672,78 +641,37 @@ margin-right: 55px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
 
 
+
+
+
+
+
+
+
+
+
         </div>
 
-
-        <div class="footer">
-<div class="logos"> <span class="icon1 baseline">
-    <svg aria-hidden="true" class="svg-icon iconLogoGlyphMd native" width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path><path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"></path></svg>
-
-       
-    </span></div>
-<div class="stack title"><h4>STACK OVERFLOW</h4>
-
-    <a href=""><small>Questions</small></a>
-    <a href=""><small>Jobs</small></a>
-    <a href=""><small>Developer Jobs Directory</small></a>
-    <a href=""><small>Salary Calculator</small></a>
-    <a href=""><small>Help</small></a>
-    <a href=""><small>Mobile</small></a>
-    <a href=""><small>Disable Responsiveness</small></a>
-
-
-</div>
-<div class="prod title"><h4>PRODUCTS</h4> 
-    <a href=""><small>Teams</small></a>
-    <a href=""><small>Talent</small></a>
-    <a href=""><small>Advertising</small></a>
-    <a href=""><small>Enterprise</small></a>
-   
-</div>
-<div class="comp title"><h4>COMPANY</h4>
-    <a href=""><small>About</small></a>
-    <a href=""><small>Press</small></a>
-    <a href=""><small>Work Here</small></a>
-    <a href=""><small>Legal</small></a>
-    <a href=""><small>Privacy Policy</small></a>
-    <a href=""><small>Terms of Service</small></a>
-    <a href=""><small>Contact Us</small></a>
-    <a href=""><small>Cookie Settings</small></a>
-    <a href=""><small>Cookie Policy</small></a>
-   
-</div>
-<div class="sen title"><h4>STACK EXCHANGE NETWORK</h4>
-
-    <a href=""><small>Technology</small></a>
-    <a href=""><small>Culture & recreation</small></a>
-    <a href=""><small>Life & arts</small></a>
-    <a href=""><small>Science</small></a>
-    <a href=""><small>Professional</small></a>
-    <a href=""><small>Business</small></a>
-    <a href=""><small></small></a>
-    <a href=""><small>API</small></a>
-    <a href=""><small>Data</small></a>
-</div>
-
-<div class="footright">
-    <div class="social">
-        <span>Blog</span>
-        <span>Facebook</span>
-        <span>Twitter</span>
-        <span>LinkedIn</span>
-        <span>Instagram</span>
-    </div>
-    
-<div class="footxt">
-    site design / logo © 2022 Stack Exchange Inc; user<br> contributions licensed under cc by-sa.<br> rev 2022.2.4.41374
-</div>
-
-
-</div>
-        </div>
 
 
 
