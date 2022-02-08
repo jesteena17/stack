@@ -1,753 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./css/all.css">
-        <link rel="stylesheet" href="./css/home.css">
-        <style>
-  .footer
-  {
-    height: 337px;
-display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: .5fr 2fr .75fr 1fr 2fr 3fr;
-    position: absolute;
-    min-width: auto;
-    column-gap: 10px;
-   
-    left: 0;
-    width: 100%;
-    z-index: 5;
-    background-color: hsl(210,8%,15%);
-    
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Liberation Sans", sans-serif;
-    box-sizing: border-box;
-  
-    padding: 7px;
-
-    padding-bottom: 53px;
-
-    padding-top: 20px;
-
-
-  }
-  .footer a{
-      color:hsl(210, 8%, 55%);
-      text-decoration: none;
-      cursor: pointer;
-      font-size: medium;
-    /* font-weight: 600; */
-
-  }
-
-
-
-  .icon1 {
-    display: inline-flex;
-    align-self: center;
-}
-
-.icon1 svg,
-.icon1 img {
-    /* height: 32px; */
-width: 37px;
-    fill: currentColor;
-}
-
-.icon1 .baseline svg,
-.icon1 img {
-    bottom: 5px;
-position: relative;
-left:30px;
-}
-   .title
-   {
-   color: hsl(210, 8%, 75%);
-   font-size:14px;
-   }    
-
-   .logos{
-    margin-left: 10px;
-    margin-top: 12px;
-   }
-.footer h4{
-    margin-block-end: 00px;
-}
-   .stack   {
-       display: grid;
-       grid-template-rows: auto;
-       height: 241px;
-   }
-   .comp
-   {
-       display: grid;
-       grid-template-rows: auto;
-       row-gap: 5px;
-       margin-left: -36px;
-   }
-   .sen  {
-       display: grid;
-       grid-template-rows: auto;
-       /* row-gap: 5px; */
-       margin-left: 25px;
-       height: 284px;
-   }
-   .prod{
-    display: grid;
-       grid-template-rows: auto;
-       height: 100px;
-row-gap: 7px;
-margin-right: 104px;
-   }
-.social{
-    margin-left: 57px;
-display: grid;
-grid-template-columns: repeat(5,1fr);
-margin-top: 22px;
-font-size: 8pt;
-column-gap: 2px;
-color: hsl(210, 8%, 55%);
-margin-right: 55px;
-
-
-}
-.footright{
-    display: grid;
-    grid-template-rows: auto;
-    row-gap: 200px;
-}
-.footxt{
-    margin-left: 57px;
-    margin-right: 55px;
-    font-size: x-small;
-    color: hsl(210, 8%, 55%);
-}
-
-       </style>
-
-    </head>
-
-    <body>
-        <div id="grid">
-            <div id="grid1">
-                <div class="logo">
-                    <img src="./images/logo.png" width="145" height="30" alt="" srcset="">
-                </div>
-                <div class="products">
-                    <span>Products</span>
-                </div>
-                <div id="search">
-                    <div id="srchicon"><i class="fa fa-search" aria-hidden="true"></i></div>
-                    <form action="" method="post">
-                        <input type="text" name="search" placeholder="Search..." id="searchinput" class="searchbox" />
-
-                    </form>
-                    <div class="tooltiptext">hiiii</div>
-                </div>
-                <div class="user">
-                    <img src="./images/userimg.jpg" class="uimg" alt="" srcset="">
-                    <span class="count">1</span>
-                </div>
-
-                <div class="inbox">
-                    <svg aria-hidden="true" class="svg-icon iconInbox" width="20" height="18" viewBox="0 0 20 18">
-                        <path
-                            d="M4.63 1h10.56a2 2 0 0 1 1.94 1.35L20 10.79V15a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-4.21l2.78-8.44c.25-.8 1-1.36 1.85-1.35Zm8.28 12 2-2h2.95l-2.44-7.32a1 1 0 0 0-.95-.68H5.35a1 1 0 0 0-.95.68L1.96 11h2.95l2 2h6Z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="achieve">
-                    <svg aria-hidden="true" class="svg-icon iconAchievements" width="18" height="18"
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/all.css">
+      <link rel="stylesheet" href="./css/home.css">
+   </head>
+   <body>
+      <div id="grid">
+         <div id="grid1">
+            <div class="logo">
+               <img src="./images/logo.svg" width="147" height="32" alt="" >
+            </div>
+            <div class="products">
+               <span>Products</span>
+            </div>
+            <div id="search">
+               <div id="srchicon"><i class="fa fa-search" aria-hidden="true"></i></div>
+               <form action="#" method="post">
+                  <input type="text" name="search" placeholder="Search..." id="searchinput" class="searchbox" />
+               </form>
+               <div class="tooltiptext">hiiii</div>
+            </div>
+            <div class="user">
+               <img src="./images/userimg.jpg" class="uimg" alt="" >
+               <span class="count">1</span>
+            </div>
+            <div class="inbox">
+               <svg aria-hidden="true" class="svg-icon iconInbox" width="20" height="18" viewBox="0 0 20 18">
+                  <path
+                     d="M4.63 1h10.56a2 2 0 0 1 1.94 1.35L20 10.79V15a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-4.21l2.78-8.44c.25-.8 1-1.36 1.85-1.35Zm8.28 12 2-2h2.95l-2.44-7.32a1 1 0 0 0-.95-.68H5.35a1 1 0 0 0-.95.68L1.96 11h2.95l2 2h6Z">
+                  </path>
+               </svg>
+            </div>
+            <div class="achieve">
+               <svg aria-hidden="true" class="svg-icon iconAchievements" width="18" height="18"
+                  viewBox="0 0 18 18">
+                  <path
+                     d="M15 2V1H3v1H0v4c0 1.6 1.4 3 3 3v1c.4 1.5 3 2.6 5 3v2H5s-1 1.5-1 2h10c0-.4-1-2-1-2h-3v-2c2-.4 4.6-1.5 5-3V9c1.6-.2 3-1.4 3-3V2h-3ZM3 7c-.5 0-1-.5-1-1V4h1v3Zm8.4 2.5L9 8 6.6 9.4l1-2.7L5 5h3l1-2.7L10 5h2.8l-2.3 1.8 1 2.7h-.1ZM16 6c0 .5-.5 1-1 1V4h1v2Z">
+                  </path>
+               </svg>
+            </div>
+            <div class="query">
+               <svg aria-hidden="true" class="svg-icon iconHelp" width="18" height="18" viewBox="0 0 18 18">
+                  <path
+                     d="M9 1C4.64 1 1 4.64 1 9c0 4.36 3.64 8 8 8 4.36 0 8-3.64 8-8 0-4.36-3.64-8-8-8Zm.81 12.13c-.02.71-.55 1.15-1.24 1.13-.66-.02-1.17-.49-1.15-1.2.02-.72.56-1.18 1.22-1.16.7.03 1.2.51 1.17 1.23ZM11.77 8c-.59.66-1.78 1.09-2.05 1.97a4 4 0 0 0-.09.75c0 .05-.03.16-.18.16H7.88c-.16 0-.18-.1-.18-.15.06-1.35.66-2.2 1.83-2.88.39-.29.7-.75.7-1.24.01-1.24-1.64-1.82-2.35-.72-.21.33-.18.73-.18 1.1H5.75c0-1.97 1.03-3.26 3.03-3.26 1.75 0 3.47.87 3.47 2.83 0 .57-.2 1.05-.48 1.44Z">
+                  </path>
+               </svg>
+            </div>
+            <div class="sites">
+               <svg aria-hidden="true" class="svg-icon iconStackExchange" width="18" height="18"
+                  viewBox="0 0 18 18">
+                  <path
+                     d="M15 1H3a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2ZM1 13c0 1.1.9 2 2 2h8v3l3-3h1a2 2 0 0 0 2-2v-2H1v2Zm16-7H1v4h16V6Z">
+                  </path>
+               </svg>
+            </div>
+            <div>
+            </div>
+         </div>
+      </div>
+      <div id="grid2">
+         <div id="sidebar">
+            <div class="home">Home</div>
+            <div class="public">PUBLIC</div>
+            <div class="qn">
+               <svg aria-hidden="true" class="svg-icon iconGlobe" width="18" height="18"
+                  viewBox="0 0 18 18">
+                  <path
+                     d="M9 1C4.64 1 1 4.64 1 9c0 4.36 3.64 8 8 8 4.36 0 8-3.64 8-8 0-4.36-3.64-8-8-8ZM8 15.32a6.46 6.46 0 0 1-4.3-2.74 6.46 6.46 0 0 1-.93-5.01L7 11.68v.8c0 .88.12 1.32 1 1.32v1.52Zm5.72-2c-.2-.66-1-1.32-1.72-1.32h-1v-2c0-.44-.56-1-1-1H6V7h1c.44 0 1-.56 1-1V5h2c.88 0 1.4-.72 1.4-1.6v-.33a6.45 6.45 0 0 1 3.83 4.51 6.45 6.45 0 0 1-1.51 5.73v.01Z">
+                  </path>
+               </svg>
+               <span>Questions</span>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="active"><a>Tags</a></li>
+                    <li><a>Users</a></li>
+                </ul>
+            </div>
+            <div class="collectives">
+               <span>COLLECTIVES</span>
+               <svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14">
+                  <path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"></path>
+               </svg>
+            </div>
+            <div class="explore">
+               <svg aria-hidden="true" class="mt-auto fc-orange-400 svg-icon iconStarVerified" width="18"
+                  height="18" viewBox="0 0 18 18">
+                  <path
+                     d="M9.86.89a1.14 1.14 0 0 0-1.72 0l-.5.58c-.3.35-.79.48-1.23.33l-.72-.25a1.14 1.14 0 0 0-1.49.85l-.14.76c-.1.45-.45.8-.9.9l-.76.14c-.67.14-1.08.83-.85 1.49l.25.72c.15.44.02.92-.33 1.23l-.58.5a1.14 1.14 0 0 0 0 1.72l.58.5c.35.3.48.79.33 1.23l-.25.72c-.23.66.18 1.35.85 1.49l.76.14c.45.1.8.45.9.9l.14.76c.14.67.83 1.08 1.49.85l.72-.25c.44-.15.92-.02 1.23.33l.5.58c.46.52 1.26.52 1.72 0l.5-.58c.3-.35.79-.48 1.23-.33l.72.25c.66.23 1.35-.18 1.49-.85l.14-.76c.1-.45.45-.8.9-.9l.76-.14c.67-.14 1.08-.83.85-1.49l-.25-.72c-.15-.44-.02-.92.33-1.23l.58-.5c.52-.46.52-1.26 0-1.72l-.58-.5c-.35-.3-.48-.79-.33-1.23l.25-.72a1.14 1.14 0 0 0-.85-1.49l-.76-.14c-.45-.1-.8-.45-.9-.9l-.14-.76a1.14 1.14 0 0 0-1.49-.85l-.72.25c-.44.15-.92.02-1.23-.33l-.5-.58Zm-.49 2.67L10.6 6.6c.05.15.19.24.34.25l3.26.22c.36.03.5.48.23.71l-2.5 2.1a.4.4 0 0 0-.14.4l.8 3.16a.4.4 0 0 1-.6.44L9.2 12.13a.4.4 0 0 0-.42 0l-2.77 1.74a.4.4 0 0 1-.6-.44l.8-3.16a.4.4 0 0 0-.13-.4l-2.5-2.1a.4.4 0 0 1 .22-.7l3.26-.23a.4.4 0 0 0 .34-.25l1.22-3.03a.4.4 0 0 1 .74 0Z">
+                  </path>
+               </svg>
+               <span>Explore Collectives</span>
+            </div>
+            <div class="findjob">
+               FIND A JOB
+            </div>
+            <div class="job">
+              <ul>
+                <li class="active"><a >Jobs</a></li>
+                <li><a>Companies</a></li>
+              </ul>
+            </div>
+            <div class="teams">
+               <span>TEAMS</span>
+               <svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14">
+                  <path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"></path>
+               </svg>
+            </div>
+            <div class="createam">
+               <svg aria-hidden="true" class="svg-icon iconBriefcaseSm" width="18" height="18" viewBox="0 0 14 14">
+                  <path
+                     d="M4 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h.5c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5h-7A1.5 1.5 0 0 1 2 10.5v-5C2 4.67 2.67 4 3.5 4H4V3Zm5 1V3H5v1h4Z">
+                  </path>
+               </svg>
+               <span> Create Free Team</span>
+            </div>
+         </div>
+         <div id="content">
+            <div class="profiledata">
+               <div class="pic">
+                  <img src="./images/userimg.jpg" alt="" >
+                  <div class="pinfo">
+                     <div class="name">The Tales</div>
+                     <div class="meminfo">
+                        <span>
+                           <svg aria-hidden="true" class="svg-icon iconCake" width="18" height="18"
+                              viewBox="0 0 18 18">
+                              <path
+                                 d="M9 4.5a1.5 1.5 0 0 0 1.28-2.27L9 0 7.72 2.23c-.14.22-.22.48-.22.77 0 .83.68 1.5 1.5 1.5Zm3.45 7.5-.8-.81-.81.8c-.98.98-2.69.98-3.67 0l-.8-.8-.82.8c-.49.49-1.14.76-1.83.76-.55 0-1.3-.17-1.72-.46V15c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2v-2.7c-.42.28-1.17.45-1.72.45-.69 0-1.34-.27-1.83-.76Zm1.3-5H10V5H8v2H4.25C3 7 2 8 2 9.25v.9c0 .81.91 1.47 1.72 1.47.39 0 .77-.14 1.03-.42l1.61-1.6 1.6 1.6a1.5 1.5 0 0 0 2.08 0l1.6-1.6 1.6 1.6c.28.28.64.43 1.03.43.81 0 1.73-.67 1.73-1.48v-.9C16 8.01 15 7 13.75 7Z">
+                              </path>
+                           </svg>
+                           Member for 3 months
+                           <svg aria-hidden="true" class="svg-icon iconClock" width="18" height="18"
+                              viewBox="0 0 18 18">
+                              <path
+                                 d="M9 17c-4.36 0-8-3.64-8-8 0-4.36 3.64-8 8-8 4.36 0 8 3.64 8 8 0 4.36-3.64 8-8 8Zm0-2c3.27 0 6-2.73 6-6s-2.73-6-6-6-6 2.73-6 6 2.73 6 6 6ZM8 5h1.01L9 9.36l3.22 2.1-.6.93L8 10V5Z">
+                              </path>
+                           </svg>
+                           Last seen this week
+                           <svg aria-hidden="true" class="svg-icon iconCalendar" width="18" height="18"
+                              viewBox="0 0 18 18">
+                              <path
+                                 d="M14 2h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h1V0h2v2h6V0h2v2ZM3 6v9h12V6H3Zm2 2h2v2H5V8Zm0 3h2v2H5v-2Zm3 0h2v2H8v-2Zm3 0h2v2h-2v-2Zm0-3h2v2h-2V8ZM8 8h2v2H8V8Z">
+                              </path>
+                           </svg>
+                           Visited 56 days, 1 consecutive
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <div class="btns">
+                  <button class="b1">
+                     <svg aria-hidden="true" class="svg-icon iconPencil" width="18" height="18"
                         viewBox="0 0 18 18">
                         <path
-                            d="M15 2V1H3v1H0v4c0 1.6 1.4 3 3 3v1c.4 1.5 3 2.6 5 3v2H5s-1 1.5-1 2h10c0-.4-1-2-1-2h-3v-2c2-.4 4.6-1.5 5-3V9c1.6-.2 3-1.4 3-3V2h-3ZM3 7c-.5 0-1-.5-1-1V4h1v3Zm8.4 2.5L9 8 6.6 9.4l1-2.7L5 5h3l1-2.7L10 5h2.8l-2.3 1.8 1 2.7h-.1ZM16 6c0 .5-.5 1-1 1V4h1v2Z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="query">
-                    <svg aria-hidden="true" class="svg-icon iconHelp" width="18" height="18" viewBox="0 0 18 18">
-                        <path
-                            d="M9 1C4.64 1 1 4.64 1 9c0 4.36 3.64 8 8 8 4.36 0 8-3.64 8-8 0-4.36-3.64-8-8-8Zm.81 12.13c-.02.71-.55 1.15-1.24 1.13-.66-.02-1.17-.49-1.15-1.2.02-.72.56-1.18 1.22-1.16.7.03 1.2.51 1.17 1.23ZM11.77 8c-.59.66-1.78 1.09-2.05 1.97a4 4 0 0 0-.09.75c0 .05-.03.16-.18.16H7.88c-.16 0-.18-.1-.18-.15.06-1.35.66-2.2 1.83-2.88.39-.29.7-.75.7-1.24.01-1.24-1.64-1.82-2.35-.72-.21.33-.18.73-.18 1.1H5.75c0-1.97 1.03-3.26 3.03-3.26 1.75 0 3.47.87 3.47 2.83 0 .57-.2 1.05-.48 1.44Z">
-                        </path>
-                    </svg>
-                </div>
-
-                <div class="sites">
-                    <svg aria-hidden="true" class="svg-icon iconStackExchange" width="18" height="18"
-                        viewBox="0 0 18 18">
-                        <path
-                            d="M15 1H3a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2ZM1 13c0 1.1.9 2 2 2h8v3l3-3h1a2 2 0 0 0 2-2v-2H1v2Zm16-7H1v4h16V6Z">
-                        </path>
-                    </svg>
-                </div>
-
-
-
-                <div>
-
-                </div>
-
-
-
-
-
+                           d="m13.68 2.15 2.17 2.17c.2.2.2.51 0 .71L14.5 6.39l-2.88-2.88 1.35-1.36c.2-.2.51-.2.71 0ZM2 13.13l8.5-8.5 2.88 2.88-8.5 8.5H2v-2.88Z"
+                           fill="grey"></path>
+                     </svg>
+                     &nbsp; Edit profile
+                  </button>
+                  <button class="b1">
+                     <svg aria-hidden="true" class="native mln2 mr2 svg-icon iconLogoSEXxs"
+                        width="18" height="18" viewBox="0 0 18 18">
+                        <path d="M3 4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2H3Z" fill="#8FD8F7"></path>
+                        <path d="M15 11H3c0 1.1.9 2 2 2h5v3l3-3a2 2 0 0 0 2-2Z" fill="#155397"></path>
+                        <path fill="#46A2D9" d="M3 5h12v2H3z"></path>
+                        <path fill="#2D6DB5" d="M3 8h12v2H3z"></path>
+                     </svg>
+                     &nbsp;Network profile
+                  </button>
+               </div>
             </div>
-        </div>
-
-        <div id="grid2">
-
-            <div id="sidebar">
-
-                <div class="home">Home</div>
-                <div class="public">PUBLIC</div>
-                <div class="qn"><svg aria-hidden="true" class="svg-icon iconGlobe" width="18" height="18"
-                        viewBox="0 0 18 18">
-                        <path
-                            d="M9 1C4.64 1 1 4.64 1 9c0 4.36 3.64 8 8 8 4.36 0 8-3.64 8-8 0-4.36-3.64-8-8-8ZM8 15.32a6.46 6.46 0 0 1-4.3-2.74 6.46 6.46 0 0 1-.93-5.01L7 11.68v.8c0 .88.12 1.32 1 1.32v1.52Zm5.72-2c-.2-.66-1-1.32-1.72-1.32h-1v-2c0-.44-.56-1-1-1H6V7h1c.44 0 1-.56 1-1V5h2c.88 0 1.4-.72 1.4-1.6v-.33a6.45 6.45 0 0 1 3.83 4.51 6.45 6.45 0 0 1-1.51 5.73v.01Z">
-                        </path>
-                    </svg>
-                    <span>Questions</span>
-                </div>
-                <div class="list">
-
-                    <li>Tags</li>
-                    <li>Users</li>
-                </div>
-                <div class="collectives">
-                    <span>COLLECTIVES</span>
-                    <svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14">
-                        <path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"></path>
-                    </svg>
-                </div>
-                <div class="explore">
-                    <svg aria-hidden="true" class="mt-auto fc-orange-400 svg-icon iconStarVerified" width="18"
-                        height="18" viewBox="0 0 18 18">
-                        <path
-                            d="M9.86.89a1.14 1.14 0 0 0-1.72 0l-.5.58c-.3.35-.79.48-1.23.33l-.72-.25a1.14 1.14 0 0 0-1.49.85l-.14.76c-.1.45-.45.8-.9.9l-.76.14c-.67.14-1.08.83-.85 1.49l.25.72c.15.44.02.92-.33 1.23l-.58.5a1.14 1.14 0 0 0 0 1.72l.58.5c.35.3.48.79.33 1.23l-.25.72c-.23.66.18 1.35.85 1.49l.76.14c.45.1.8.45.9.9l.14.76c.14.67.83 1.08 1.49.85l.72-.25c.44-.15.92-.02 1.23.33l.5.58c.46.52 1.26.52 1.72 0l.5-.58c.3-.35.79-.48 1.23-.33l.72.25c.66.23 1.35-.18 1.49-.85l.14-.76c.1-.45.45-.8.9-.9l.76-.14c.67-.14 1.08-.83.85-1.49l-.25-.72c-.15-.44-.02-.92.33-1.23l.58-.5c.52-.46.52-1.26 0-1.72l-.58-.5c-.35-.3-.48-.79-.33-1.23l.25-.72a1.14 1.14 0 0 0-.85-1.49l-.76-.14c-.45-.1-.8-.45-.9-.9l-.14-.76a1.14 1.14 0 0 0-1.49-.85l-.72.25c-.44.15-.92.02-1.23-.33l-.5-.58Zm-.49 2.67L10.6 6.6c.05.15.19.24.34.25l3.26.22c.36.03.5.48.23.71l-2.5 2.1a.4.4 0 0 0-.14.4l.8 3.16a.4.4 0 0 1-.6.44L9.2 12.13a.4.4 0 0 0-.42 0l-2.77 1.74a.4.4 0 0 1-.6-.44l.8-3.16a.4.4 0 0 0-.13-.4l-2.5-2.1a.4.4 0 0 1 .22-.7l3.26-.23a.4.4 0 0 0 .34-.25l1.22-3.03a.4.4 0 0 1 .74 0Z">
-                        </path>
-                    </svg>
-
-                    <span>Explore Collectives</span>
-                </div>
-                <div class="findjob">
-                    FIND A JOB
-                </div>
-                <div class="job">
-
-                    <li>Jobs</li>
-                    <li>Companies</li>
-
-                </div>
-                <div class="teams">
-
-                    <span>TEAMS</span>
-                    <svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14">
-                        <path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"></path>
-                    </svg>
-                </div>
-                <div class="createam">
-                    <svg aria-hidden="true" class="svg-icon iconBriefcaseSm" width="18" height="18" viewBox="0 0 14 14">
-                        <path
-                            d="M4 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h.5c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5h-7A1.5 1.5 0 0 1 2 10.5v-5C2 4.67 2.67 4 3.5 4H4V3Zm5 1V3H5v1h4Z">
-                        </path>
-                    </svg>
-                    <span> Create Free Team</span>
-                </div>
-
-
-
-
-
-
+            <div class="filters">
+               <span class="s1">Profile</span>
+               <span class="s2">Activity</span>
+               <span class="s3">Developer Story</span>
+               <span class="s4">Settings</span>
             </div>
-            <div id="content">
-
-                <div class="profiledata">
-                    <div class="pic">
-                        <img src="./images/userimg.jpg" alt="" srcset="">
-
-                        <div class="pinfo">
-                            <div class="name">The Tales</div>
-                            <div class="meminfo">
-                                <span><svg aria-hidden="true" class="svg-icon iconCake" width="18" height="18"
-                                        viewBox="0 0 18 18">
-                                        <path
-                                            d="M9 4.5a1.5 1.5 0 0 0 1.28-2.27L9 0 7.72 2.23c-.14.22-.22.48-.22.77 0 .83.68 1.5 1.5 1.5Zm3.45 7.5-.8-.81-.81.8c-.98.98-2.69.98-3.67 0l-.8-.8-.82.8c-.49.49-1.14.76-1.83.76-.55 0-1.3-.17-1.72-.46V15c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2v-2.7c-.42.28-1.17.45-1.72.45-.69 0-1.34-.27-1.83-.76Zm1.3-5H10V5H8v2H4.25C3 7 2 8 2 9.25v.9c0 .81.91 1.47 1.72 1.47.39 0 .77-.14 1.03-.42l1.61-1.6 1.6 1.6a1.5 1.5 0 0 0 2.08 0l1.6-1.6 1.6 1.6c.28.28.64.43 1.03.43.81 0 1.73-.67 1.73-1.48v-.9C16 8.01 15 7 13.75 7Z">
-                                        </path>
-                                    </svg>
-                                    Member for 3 months
-                                    <svg aria-hidden="true" class="svg-icon iconClock" width="18" height="18"
-                                        viewBox="0 0 18 18">
-                                        <path
-                                            d="M9 17c-4.36 0-8-3.64-8-8 0-4.36 3.64-8 8-8 4.36 0 8 3.64 8 8 0 4.36-3.64 8-8 8Zm0-2c3.27 0 6-2.73 6-6s-2.73-6-6-6-6 2.73-6 6 2.73 6 6 6ZM8 5h1.01L9 9.36l3.22 2.1-.6.93L8 10V5Z">
-                                        </path>
-                                    </svg>
-                                    Last seen this week
-                                    <svg aria-hidden="true" class="svg-icon iconCalendar" width="18" height="18"
-                                        viewBox="0 0 18 18">
-                                        <path
-                                            d="M14 2h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h1V0h2v2h6V0h2v2ZM3 6v9h12V6H3Zm2 2h2v2H5V8Zm0 3h2v2H5v-2Zm3 0h2v2H8v-2Zm3 0h2v2h-2v-2Zm0-3h2v2h-2V8ZM8 8h2v2H8V8Z">
-                                        </path>
-                                    </svg>
-                                    Visited 56 days, 1 consecutive
-                                </span>
-                            </div>
+            <div id="grid3">
+               <div id="grid3a">
+                  <span class="s5">Summary</span>
+                  <div>Answers</div>
+                  <div>Questions</div>
+                  <div>Tags</div>
+                  <div>Articles</div>
+                  <div>Badges</div>
+                  <div>Bookmarks</div>
+                  <div>Following</div>
+                  <div>Bounties</div>
+                  <div>Reputation</div>
+                  <div>All actions</div>
+                  <div>Responses</div>
+                  <div>Votes</div>
+               </div>
+               <div id="grid3b">
+                  <div class="s6div"> <span class="s6">Summary</span></div>
+                  <div id="grid4">
+                     <div class="d1">
+                        <span>
+                           <svg aria-hidden="true" class="svg-spot spotReputation" width="48" height="48"
+                              viewBox="0 0 48 48">
+                              <path
+                                 d="M32 9a1 1 0 0 1-1 1H6a1 1 0 0 1 0-2h25a1 1 0 0 1 1 1Zm4.25 1.6a1 1 0 0 1 .92-.6H41a1 1 0 1 1 0 2h-3.18l-4.9 11.4a1 1 0 0 1-.92.6h-7.38l-2.73 5.45A1 1 0 0 1 21 30h-6.51l-4.07 9.4a1 1 0 0 1-1.84-.8l4.34-10a1 1 0 0 1 .91-.6h6.55l2.73-5.45A1 1 0 0 1 24 22h7.34l4.9-11.4ZM42 16a1 1 0 1 0 0-2h-2a1 1 0 1 0 0 2h2Zm-24 5a1 1 0 0 1-1 1H6a1 1 0 1 1 0-2h11a1 1 0 0 1 1 1Zm24 1a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2h4Zm1 11a1 1 0 0 1-1 1H17a1 1 0 1 1 0-2h25a1 1 0 0 1 1 1ZM8 28a1 1 0 1 0 0-2H6a1 1 0 1 0 0 2h2Z"
+                                 opacity=".2"></path>
+                              <path
+                                 d="M36.17 8a1 1 0 0 0-.92.6L30.35 20H23a1 1 0 0 0-.9.55L19.39 26h-6.55a1 1 0 0 0-.9.58L6.1 39.08a1 1 0 0 0 1.82.84L13.47 28H20a1 1 0 0 0 .9-.55L23.61 22H31a1 1 0 0 0 .92-.6l4.9-11.4H42a1 1 0 1 0 0-2h-5.83ZM27 16a1 1 0 1 0 0-2H6a1 1 0 1 0 0 2h21Zm16 11a1 1 0 0 1-1 1H28a1 1 0 1 1 0-2h14a1 1 0 0 1 1 1Zm-1 13a1 1 0 1 0 0-2H14a1 1 0 1 0 0 2h28Z">
+                              </path>
+                           </svg>
+                        </span>
+                        <div>
+                           <h4>Reputation is how the community thanks you</h4>
                         </div>
-                    </div>
-                    <div class="btns">
-                        <button class="b1"><svg aria-hidden="true" class="svg-icon iconPencil" width="18" height="18"
-                                viewBox="0 0 18 18">
-                                <path
-                                    d="m13.68 2.15 2.17 2.17c.2.2.2.51 0 .71L14.5 6.39l-2.88-2.88 1.35-1.36c.2-.2.51-.2.71 0ZM2 13.13l8.5-8.5 2.88 2.88-8.5 8.5H2v-2.88Z"
-                                    fill="grey"></path>
-                            </svg> &nbsp; Edit profile</button>
-                        <button class="b1"><svg aria-hidden="true" class="native mln2 mr2 svg-icon iconLogoSEXxs"
-                                width="18" height="18" viewBox="0 0 18 18">
-                                <path d="M3 4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2H3Z" fill="#8FD8F7"></path>
-                                <path d="M15 11H3c0 1.1.9 2 2 2h5v3l3-3a2 2 0 0 0 2-2Z" fill="#155397"></path>
-                                <path fill="#46A2D9" d="M3 5h12v2H3z"></path>
-                                <path fill="#2D6DB5" d="M3 8h12v2H3z"></path>
-                            </svg> &nbsp;Network profile</button>
-
-                    </div>
-                </div>
-
-                <div class="filters">
-                    <span class="s1">Profile</span>
-                    <span class="s2">Activity</span>
-                    <span class="s3">Developer Story</span>
-                    <span class="s4">Settings</span>
-
-                </div>
-
-                <div class="summ">
-                    <span class="s5">Summary</span>
-                    <span class="s6">Summary</span>
-                </div>
-                <div id="grid3">
-                    <div id="grid3a">
-
-                        <div>Answers</div>
-                        <div>Questions</div>
-                        <div>Tags</div>
-                        <div>Articles</div>
-                        <div>Badges</div>
-                        <div>Bookmarks</div>
-                        <div>Following</div>
-                        <div>Bounties</div>
-                        <div>Reputation</div>
-                        <div>All actions</div>
-                        <div>Responses</div>
-                        <div>Votes</div>
-                    </div>
-
-                    <div id="grid3b">
-
-                        <div id="grid4">
-
-
-                            <div class="d1">
-
-                                <span>
-                                    <svg aria-hidden="true" class="svg-spot spotReputation" width="48" height="48"
-                                        viewBox="0 0 48 48">
-                                        <path
-                                            d="M32 9a1 1 0 0 1-1 1H6a1 1 0 0 1 0-2h25a1 1 0 0 1 1 1Zm4.25 1.6a1 1 0 0 1 .92-.6H41a1 1 0 1 1 0 2h-3.18l-4.9 11.4a1 1 0 0 1-.92.6h-7.38l-2.73 5.45A1 1 0 0 1 21 30h-6.51l-4.07 9.4a1 1 0 0 1-1.84-.8l4.34-10a1 1 0 0 1 .91-.6h6.55l2.73-5.45A1 1 0 0 1 24 22h7.34l4.9-11.4ZM42 16a1 1 0 1 0 0-2h-2a1 1 0 1 0 0 2h2Zm-24 5a1 1 0 0 1-1 1H6a1 1 0 1 1 0-2h11a1 1 0 0 1 1 1Zm24 1a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2h4Zm1 11a1 1 0 0 1-1 1H17a1 1 0 1 1 0-2h25a1 1 0 0 1 1 1ZM8 28a1 1 0 1 0 0-2H6a1 1 0 1 0 0 2h2Z"
-                                            opacity=".2"></path>
-                                        <path
-                                            d="M36.17 8a1 1 0 0 0-.92.6L30.35 20H23a1 1 0 0 0-.9.55L19.39 26h-6.55a1 1 0 0 0-.9.58L6.1 39.08a1 1 0 0 0 1.82.84L13.47 28H20a1 1 0 0 0 .9-.55L23.61 22H31a1 1 0 0 0 .92-.6l4.9-11.4H42a1 1 0 1 0 0-2h-5.83ZM27 16a1 1 0 1 0 0-2H6a1 1 0 1 0 0 2h21Zm16 11a1 1 0 0 1-1 1H28a1 1 0 1 1 0-2h14a1 1 0 0 1 1 1Zm-1 13a1 1 0 1 0 0-2H14a1 1 0 1 0 0 2h28Z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <h4>Reputation is how the community thanks you</h4>
-                                </span>
-                                <span class="sp1"><small>When users upvote your helpful posts, you'll earn
-                                        reputation and unlock new privileges.</small></span>
-
-                                <span class="sp2"><small>Learn more about <a><u>reputation</u></a> and
-                                        <a><u>privileges</u></a></small></span>
-
-                            </div>
-                            <div class="d1"><span>
-                                    <svg aria-hidden="true" class="svg-spot spotBadge" width="48" height="48"
-                                        viewBox="0 0 48 48">
-                                        <path
-                                            d="M14 6a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1ZM7 21c0-1.1.9-2 2-2h35a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3V21Zm27 23a1 1 0 1 0 0-2H14a1 1 0 1 0 0 2h20Z"
-                                            opacity=".2"></path>
-                                        <path
-                                            d="M8 11a1 1 0 0 1 1-1h31a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1Zm0 13a4 4 0 1 1 8 0 4 4 0 0 1-8 0Zm4-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4a3 3 0 0 1 3-3h36a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V18Zm3-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h36a1 1 0 0 0 1-1V18a1 1 0 0 0-1-1H6Zm34 22a1 1 0 1 0 0-2H9a1 1 0 1 0 0 2h31Z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <h4>Earn badges for helpful actions</h4>
-                                </span>
-                                <span class="sp1"><small>Badges are bits of digital flair that you get
-                                        when you participate in especially helpful
-                                        ways.</small></span>
-
-                                <span class="sp3"><small>Take the Tour and earn your first badge</small></span>
-
-
-
-                            </div>
-                            <div class="d1"><span>
-                                    <svg aria-hidden="true" class="svg-spot spotAstronaut" width="48" height="48"
-                                        viewBox="0 0 48 48">
-                                        <path opacity=".2"
-                                            d="M39.5 12a.5.5 0 0 1-.5-.5.5.5 0 0 0-.5-.5h-6.1c-.77 0-1.4.63-1.4 1.4v6.2c0 .77.63 1.4 1.4 1.4H38a1 1 0 0 1 1 1 1 1 0 0 0 1 1h3.6c.77 0 1.4-.63 1.4-1.4v-7.2c0-.77-.63-1.4-1.4-1.4h-4.1Z">
-                                        </path>
-                                        <path
-                                            d="M15.03 5.84c-2.17 0-3.66.42-4.44 1.59-.37.55-.5 1.17-.55 1.73-.05.44-.04.93-.04 1.39v1.8c0 .4.2.7.38.89.18.17.38.29.54.37.34.15.75.25 1.15.32.83.15 1.9.22 2.93.22 1.03 0 2.1-.07 2.93-.22.4-.07.81-.17 1.15-.32.16-.08.36-.2.54-.37.18-.19.38-.49.38-.9V10.5c0-.44 0-.9-.03-1.32a3.68 3.68 0 0 0-.52-1.73c-.76-1.18-2.25-1.6-4.42-1.6ZM12 10.5c0-.45 0-.82.03-1.15.04-.4.12-.65.22-.81.18-.26.7-.7 2.78-.7s2.58.44 2.74.69c.1.15.18.4.21.8.03.32.02.66.02 1.07v1.47l-.43.1c-.67.12-1.6.18-2.57.18a15.59 15.59 0 0 1-3-.28V10.5ZM11 21a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1Zm4.03-19c-3.82 0-6.2 1.12-7.57 3-1.31 1.8-1.51 4.08-1.51 6v3.94A4.45 4.45 0 0 0 2 19.5v11C2 32.02 3.13 34 5.47 34c.58 0 1.09-.12 1.53-.33V44a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V32h2v12a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V23.3l2.87 2.74 1.97 1.86.16.14V44a1 1 0 1 0 2 0V28.79h.1c.8 0 1.65-.28 2.27-.9.62-.64.88-1.52.88-2.32 0-.79-.26-1.66-.87-2.3L30 20.78V19h6c0 1.1.9 2 2 2h3a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3h-3.09c-.2-.58-.76-1-1.41-1H30v-.17a3 3 0 1 0-2 0v10.83l-1.24-1.32h-.01l-.34-.36c-.48-.49-.93-.95-1.36-1.3-.3-.25-.64-.47-1.02-.63V11c0-1.9-.18-4.2-1.47-6-1.35-1.88-3.71-3-7.53-3Zm-7.08 9c0-1.86.21-3.57 1.13-4.83C9.94 5 11.6 4 15.03 4s5.06.99 5.9 2.17c.9 1.25 1.1 2.96 1.1 4.83v4.41c-.35.11-.9.22-1.64.32a46.7 46.7 0 0 1-5.4.28c-1.99 0-3.95-.1-5.4-.28a9.4 9.4 0 0 1-1.64-.32V11ZM12 39.34a3.4 3.4 0 0 0-3 0V36h3v3.34Zm-3 3.31c0-.98.71-1.65 1.5-1.65s1.5.67 1.5 1.65V43H9v-.35Zm9 .35v-.35c0-.98.71-1.65 1.5-1.65s1.5.67 1.5 1.65V43h-3Zm1.5-4a3.4 3.4 0 0 0-1.5.34V36h3v3.34a3.4 3.4 0 0 0-1.5-.34ZM9 34v-8h12v8h-3v-3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v3H9Zm-2-3.5c0 .69-.56 1.5-1.53 1.5C4.53 32 4 31.23 4 30.5V29h3v1.5ZM7 27H4v-7.5c0-.88.32-1.51.8-1.93a3 3 0 0 1 1.67-.69l.08.06c.24.17.52.29.78.37.53.17 1.23.3 2 .4 1.57.2 3.62.3 5.66.3 2.03 0 4.09-.1 5.65-.3.78-.1 1.48-.23 2.01-.4.25-.08.52-.19.75-.35l.4.27c.32.27.66.62 1.13 1.1v.01l.38.39L28 21.56v.92l-1.45 1.44-3.64-3.46c-.25-.24-.55-.46-.91-.46a1 1 0 0 0-1 1v3H9v-3a1 1 0 1 0-2 0v6Zm23-.22v-3.1l.93.98h.01c.17.18.31.51.31.91s-.14.73-.3.91a1.19 1.19 0 0 1-.95.3ZM29 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm1 13v-7h6v7h-6Zm8 2v-8h3a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-3Z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <h4>Measure your impact</h4>
-                                </span>
-
-                                <span class="sp1"><small>Your posts and helpful actions here help hundreds or thousands
-                                        of people searching for help.</small></span>
-
-                            </div>
+                        <span class="sp1"><small>When users upvote your helpful posts, you'll earn
+                        reputation and unlock new privileges.</small></span>
+                        <span class="sp2"><small>Learn more about <a><u>reputation</u></a> and
+                        <a><u>privileges</u></a></small></span>
+                     </div>
+                     <div class="d1">
+                        <span>
+                           <svg aria-hidden="true" class="svg-spot spotBadge" width="48" height="48"
+                              viewBox="0 0 48 48">
+                              <path
+                                 d="M14 6a1 1 0 0 1 1-1h20a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1ZM7 21c0-1.1.9-2 2-2h35a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3V21Zm27 23a1 1 0 1 0 0-2H14a1 1 0 1 0 0 2h20Z"
+                                 opacity=".2"></path>
+                              <path
+                                 d="M8 11a1 1 0 0 1 1-1h31a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1Zm0 13a4 4 0 1 1 8 0 4 4 0 0 1-8 0Zm4-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4a3 3 0 0 1 3-3h36a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V18Zm3-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h36a1 1 0 0 0 1-1V18a1 1 0 0 0-1-1H6Zm34 22a1 1 0 1 0 0-2H9a1 1 0 1 0 0 2h31Z">
+                              </path>
+                           </svg>
+                        </span>
+                        <div>
+                           <h4>Earn badges for helpful actions</h4>
                         </div>
-                        <div id="grid5">
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Answers</h4>
-                                        </span>
-                                        <span class="box">
-
-                                            <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
-                                            <span class="sbtn noborder"><small>Activity</small></span>
-                                            <span class="sbtn btnborderright"><small>Newest</small></span>
-                                        </span>
-                                    </div>
-                                    <div class="qns">
-                                        <span>
-                                            <h4>Questions</h4>
-                                        </span>
-                                        <span class="box">
-
-                                            <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
-                                            <span class="sbtn noborder"><small>Activity</small></span>
-                                            <span class="sbtn noborder"><small>Newest</small></span>
-                                            <span class="sbtn btnborderright"><small>Views</small></span>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="boxarea">
-                                    <div class="barea"><span>
-                                            You have not <a>answered</a> any questions
-                                        </span></div>
-                                    <div class="barea">You have not &nbsp; <a>asked</a> &nbsp; any questions</div>
-                                </div>
-
-                            </div>
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Tags</h4>
-                                        </span>
-
-                                    </div>
-                                    <div class="qns">
-                                        <span>
-                                            <h4>Reputation</h4>
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <div class="boxarea">
-                                    <div class="barea"><span>
-                                            You have not participated in any &nbsp;<a>tags</a>
-                                        </span></div>
-                                    <div class="barea">You have no recent &nbsp; <a>reputation changes</a>. </div>
-                                </div>
-
-                            </div>
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Badges</h4>
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafull">
-                                    <div class="barea"><span>
-                                            You have not earned any &nbsp;<a>badges</a>
-                                        </span></div>
-
-                                </div>
-
-                            </div>
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Bookmarks</h4>
-                                        </span>
-                                        <span class="box">
-
-                                            <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
-                                            <span class="sbtn noborder"><small>Activity</small></span>
-                                            <span class="sbtn noborder"><small>Newest</small></span>
-                                            <span class="sbtn noborder"><small>Views</small></span>
-                                            <span class="sbtn btnborderright"><small>Added</small></span>
-                                        </span>
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafull">
-                                    <div class="barea"><span>
-                                            You have no &nbsp;<a>bookmarked questions.</a>
-                                        </span></div>
-
-                                </div>
-
-                            </div>
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Followed posts</h4>
-                                        </span>
-                                        <span class="box">
-
-                                            <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
-                                            <span class="sbtn noborder"><small>Activity</small></span>
-                                            <span class="sbtn noborder"><small>Newest</small></span>
-                                            <span class="sbtn btnborderright"><small>Added</small></span>
-                                        </span>
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafull">
-                                    <div class="barea"><span>
-                                            You are not &nbsp;<a>following any posts.</a>
-                                        </span></div>
-
-                                </div>
-
-                            </div>
-
-
-
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Accounts</h4>
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafullacc">
-                                    <div class="accnt">
-                                         <span class="icon baseline">
-                                            <svg aria-hidden="true" class="svg-icon iconLogoGlyphMd native" width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path><path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"></path></svg>
-
-                                                &nbsp;<a>Stack Overflow</a>
-                                            </span>
-                                      
-                                        
-                                    </div>
-<div><span class="one">1</span></div>
-                                </div>
-
-                            </div>
-
-
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Active bounties (0)</h4>
-                                        </span>
-                                        <span class="box">
-
-                                            <span class="btnselected sbtn btnborderleft"><small>Active</small></span>
-                                            <span class="sbtn noborder"><small>Offered</small></span>
-                                            <span class="sbtn btnborderright"><small>Earned</small></span>
-                                        </span>
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafull">
-                                    <div class="barea"><span>
-                                        You have no active &nbsp;<a>bounties</a>
-                                        </span></div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Articles</h4>
-                                        </span>
-                                        <span class="box">
-
-                                            <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
-                                            <span class="sbtn noborder"><small>Activity</small></span>
-                                            <span class="sbtn noborder"><small>Newest</small></span>
-                                            <span class="sbtn btnborderright"><small>Views</small></span>
-                                        </span>
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafull">
-                                    <div class="barea"><span>
-                                        You have not created any articles.
-                                        </span></div>
-
-                                </div>
-
-                            </div>
-
-                            <div id="filtercontents">
-                                <div class="qnans">
-                                    <div class="ans">
-                                        <span>
-                                            <h4>Votes cast</h4>
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="boxareafull">
-                                    <div class="barea"><span>
-                                        You have not cast any &nbsp;<a>votes</a>
-                                        </span></div>
-
-                                </div>
-
-                            </div>
-
-
-<div class="feed">
-    <svg aria-hidden="true" class="fc-orange-400 svg-icon iconRss" width="18" height="18" viewBox="0 0 18 18"><path d="M1 3c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v12c0 1.09-.91 2-2 2H3c-1.09 0-2-.91-2-2V3Zm14.5 12C15.5 8.1 9.9 2.5 3 2.5V5a10 10 0 0 1 10 10h2.5Zm-5 0A7.5 7.5 0 0 0 3 7.5V10a5 5 0 0 1 5 5h2.5Zm-5 0A2.5 2.5 0 0 0 3 12.5V15h2.5Z"></path></svg>
-<a href="">User feed</a>
-</div>
-
+                        <span class="sp1"><small>Badges are bits of digital flair that you get
+                        when you participate in especially helpful
+                        ways.</small></span>
+                        <span class="sp3"><small>Take the Tour and earn your first badge</small></span>
+                     </div>
+                     <div class="d1">
+                        <span>
+                           <svg aria-hidden="true" class="svg-spot spotAstronaut" width="48" height="48"
+                              viewBox="0 0 48 48">
+                              <path opacity=".2"
+                                 d="M39.5 12a.5.5 0 0 1-.5-.5.5.5 0 0 0-.5-.5h-6.1c-.77 0-1.4.63-1.4 1.4v6.2c0 .77.63 1.4 1.4 1.4H38a1 1 0 0 1 1 1 1 1 0 0 0 1 1h3.6c.77 0 1.4-.63 1.4-1.4v-7.2c0-.77-.63-1.4-1.4-1.4h-4.1Z">
+                              </path>
+                              <path
+                                 d="M15.03 5.84c-2.17 0-3.66.42-4.44 1.59-.37.55-.5 1.17-.55 1.73-.05.44-.04.93-.04 1.39v1.8c0 .4.2.7.38.89.18.17.38.29.54.37.34.15.75.25 1.15.32.83.15 1.9.22 2.93.22 1.03 0 2.1-.07 2.93-.22.4-.07.81-.17 1.15-.32.16-.08.36-.2.54-.37.18-.19.38-.49.38-.9V10.5c0-.44 0-.9-.03-1.32a3.68 3.68 0 0 0-.52-1.73c-.76-1.18-2.25-1.6-4.42-1.6ZM12 10.5c0-.45 0-.82.03-1.15.04-.4.12-.65.22-.81.18-.26.7-.7 2.78-.7s2.58.44 2.74.69c.1.15.18.4.21.8.03.32.02.66.02 1.07v1.47l-.43.1c-.67.12-1.6.18-2.57.18a15.59 15.59 0 0 1-3-.28V10.5ZM11 21a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1Zm4.03-19c-3.82 0-6.2 1.12-7.57 3-1.31 1.8-1.51 4.08-1.51 6v3.94A4.45 4.45 0 0 0 2 19.5v11C2 32.02 3.13 34 5.47 34c.58 0 1.09-.12 1.53-.33V44a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V32h2v12a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V23.3l2.87 2.74 1.97 1.86.16.14V44a1 1 0 1 0 2 0V28.79h.1c.8 0 1.65-.28 2.27-.9.62-.64.88-1.52.88-2.32 0-.79-.26-1.66-.87-2.3L30 20.78V19h6c0 1.1.9 2 2 2h3a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3h-3.09c-.2-.58-.76-1-1.41-1H30v-.17a3 3 0 1 0-2 0v10.83l-1.24-1.32h-.01l-.34-.36c-.48-.49-.93-.95-1.36-1.3-.3-.25-.64-.47-1.02-.63V11c0-1.9-.18-4.2-1.47-6-1.35-1.88-3.71-3-7.53-3Zm-7.08 9c0-1.86.21-3.57 1.13-4.83C9.94 5 11.6 4 15.03 4s5.06.99 5.9 2.17c.9 1.25 1.1 2.96 1.1 4.83v4.41c-.35.11-.9.22-1.64.32a46.7 46.7 0 0 1-5.4.28c-1.99 0-3.95-.1-5.4-.28a9.4 9.4 0 0 1-1.64-.32V11ZM12 39.34a3.4 3.4 0 0 0-3 0V36h3v3.34Zm-3 3.31c0-.98.71-1.65 1.5-1.65s1.5.67 1.5 1.65V43H9v-.35Zm9 .35v-.35c0-.98.71-1.65 1.5-1.65s1.5.67 1.5 1.65V43h-3Zm1.5-4a3.4 3.4 0 0 0-1.5.34V36h3v3.34a3.4 3.4 0 0 0-1.5-.34ZM9 34v-8h12v8h-3v-3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v3H9Zm-2-3.5c0 .69-.56 1.5-1.53 1.5C4.53 32 4 31.23 4 30.5V29h3v1.5ZM7 27H4v-7.5c0-.88.32-1.51.8-1.93a3 3 0 0 1 1.67-.69l.08.06c.24.17.52.29.78.37.53.17 1.23.3 2 .4 1.57.2 3.62.3 5.66.3 2.03 0 4.09-.1 5.65-.3.78-.1 1.48-.23 2.01-.4.25-.08.52-.19.75-.35l.4.27c.32.27.66.62 1.13 1.1v.01l.38.39L28 21.56v.92l-1.45 1.44-3.64-3.46c-.25-.24-.55-.46-.91-.46a1 1 0 0 0-1 1v3H9v-3a1 1 0 1 0-2 0v6Zm23-.22v-3.1l.93.98h.01c.17.18.31.51.31.91s-.14.73-.3.91a1.19 1.19 0 0 1-.95.3ZM29 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm1 13v-7h6v7h-6Zm8 2v-8h3a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-3Z">
+                              </path>
+                           </svg>
+                        </span>
+                        <div>
+                           <h4>Measure your impact</h4>
                         </div>
-
-
-
-
-
-
-                    </div>
-                </div>
-
-
-
+                        <span class="sp1"><small>Your posts and helpful actions here help hundreds or thousands
+                        of people searching for help.</small></span>
+                     </div>
+                  </div>
+                  <div id="grid5">
+                     <div class="filtercontents">
+                        <div class="qnans">
+                           <div class="ans">
+                              <div>
+                                 <h4>Answers</h4>
+                              </div>
+                              <span class="box">
+                              <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
+                              <span class="sbtn noborder"><small>Activity</small></span>
+                              <span class="sbtn btnborderright"><small>Newest</small></span>
+                              </span>
+                           </div>
+                           <div class="qns">
+                              <div>
+                                 <h4>Questions</h4>
+                              </div>
+                              <span class="box">
+                              <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
+                              <span class="sbtn noborder"><small>Activity</small></span>
+                              <span class="sbtn noborder"><small>Newest</small></span>
+                              <span class="sbtn btnborderright"><small>Views</small></span>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="boxarea">
+                           <div class="barea"><span>
+                              You have not <a>answered</a> any questions
+                              </span>
+                           </div>
+                           <div class="barea">You have not &nbsp; <a>asked</a> &nbsp; any questions</div>
+                        </div>
+                     </div>
+                     <div class="filtercontents">
+                        <div class="qnans">
+                           <div class="ans">
+                              <div>
+                                 <h4>Tags</h4>
+                              </div>
+                           </div>
+                           <div class="qns">
+                              <div>
+                                 <h4>Reputation</h4>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="boxarea">
+                           <div class="barea"><span>
+                              You have not participated in any &nbsp;<a>tags</a>
+                              </span>
+                           </div>
+                           <div class="barea">You have no recent &nbsp; <a>reputation changes</a>. </div>
+                        </div>
+                     </div>
+                     <div class="filtercontents">
+                        <div class="qnans">
+                           <div class="ans">
+                              <div>
+                                 <h4>Badges</h4>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="boxareafull">
+                           <div class="barea"><span>
+                              You have not earned any &nbsp;<a>badges</a>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filtercontents">
+                        <div class="qnans">
+                           <div class="ans">
+                              <div>
+                                 <h4>Bookmarks</h4>
+                              </div>
+                              <span class="box">
+                              <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
+                              <span class="sbtn noborder"><small>Activity</small></span>
+                              <span class="sbtn noborder"><small>Newest</small></span>
+                              <span class="sbtn noborder"><small>Views</small></span>
+                              <span class="sbtn btnborderright"><small>Added</small></span>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="boxareafull">
+                           <div class="barea"><span>
+                              You have no &nbsp;<a>bookmarked questions.</a>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filtercontents">
+                        <div class="qnans">
+                           <div class="ans">
+                              <div>
+                                 <h4>Followed posts</h4>
+                              </div>
+                              <span class="box">
+                              <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
+                              <span class="sbtn noborder"><small>Activity</small></span>
+                              <span class="sbtn noborder"><small>Newest</small></span>
+                              <span class="sbtn btnborderright"><small>Added</small></span>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="boxareafull">
+                           <div class="barea"><span>
+                              You are not &nbsp;<a>following any posts.</a>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filtercontents">
+                        <div class="qnans">
+                           <div class="ans">
+                              <div>
+                                 <h4>Accounts</h4>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="boxareafullacc">
+                           <div class="accnt">
+                              <span class="icon baseline">
+                                 <svg aria-hidden="true" class="svg-icon iconLogoGlyphMd native" width="32" height="37" viewBox="0 0 32 37">
+                                    <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
+                                    <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"></path>
+                                 </svg>
+                                 &nbsp;<a>Stack Overflow</a>
+                              </span>
+                           </div>
+                           <div><span class="one">1</span></div>
+                        </div>
+                     </div>
+                     <div class="filtercontents">
+                        <div class="qnans">
+                           <div class="ans">
+                              <div>
+                                 <h4>Active bounties (0)</h4>
+                              </div>
+                              <span class="box">
+                              <span class="btnselected sbtn btnborderleft"><small>Active</small></span>
+                              <span class="sbtn noborder"><small>Offered</small></span>
+                              <span class="sbtn btnborderright"><small>Earned</small></span>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="boxareafull">
+                           <div class="barea"><span>
+                              You have no active &nbsp;<a>bounties</a>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filtercontents">
+                        <div class="qnans">
+                           <div class="ans">
+                              <div>
+                                 <h4>Articles</h4>
+                              </div>
+                              <span class="box">
+                              <span class="btnselected sbtn btnborderleft"><small>Score</small></span>
+                              <span class="sbtn noborder"><small>Activity</small></span>
+                              <span class="sbtn noborder"><small>Newest</small></span>
+                              <span class="sbtn btnborderright"><small>Views</small></span>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="boxareafull">
+                           <div class="barea"><span>
+                              You have not created any articles.
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filtercontents">
+                        <div class="qnans">
+                           <div class="ans">
+                              <div>
+                                 <h4>Votes cast</h4>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="boxareafull">
+                           <div class="barea"><span>
+                              You have not cast any &nbsp;<a>votes</a>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="feed">
+                        <svg aria-hidden="true" class="fc-orange-400 svg-icon iconRss" width="18" height="18" viewBox="0 0 18 18">
+                           <path d="M1 3c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v12c0 1.09-.91 2-2 2H3c-1.09 0-2-.91-2-2V3Zm14.5 12C15.5 8.1 9.9 2.5 3 2.5V5a10 10 0 0 1 10 10h2.5Zm-5 0A7.5 7.5 0 0 0 3 7.5V10a5 5 0 0 1 5 5h2.5Zm-5 0A2.5 2.5 0 0 0 3 12.5V15h2.5Z"></path>
+                        </svg>
+                        <a href="">User feed</a>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-
-        </div>
-
-
-        <div class="footer">
-<div class="logos"> <span class="icon1 baseline">
-    <svg aria-hidden="true" class="svg-icon iconLogoGlyphMd native" width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path><path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"></path></svg>
-
-       
-    </span></div>
-<div class="stack title"><h4>STACK OVERFLOW</h4>
-
-    <a href=""><small>Questions</small></a>
-    <a href=""><small>Jobs</small></a>
-    <a href=""><small>Developer Jobs Directory</small></a>
-    <a href=""><small>Salary Calculator</small></a>
-    <a href=""><small>Help</small></a>
-    <a href=""><small>Mobile</small></a>
-    <a href=""><small>Disable Responsiveness</small></a>
-
-
-</div>
-<div class="prod title"><h4>PRODUCTS</h4> 
-    <a href=""><small>Teams</small></a>
-    <a href=""><small>Talent</small></a>
-    <a href=""><small>Advertising</small></a>
-    <a href=""><small>Enterprise</small></a>
-   
-</div>
-<div class="comp title"><h4>COMPANY</h4>
-    <a href=""><small>About</small></a>
-    <a href=""><small>Press</small></a>
-    <a href=""><small>Work Here</small></a>
-    <a href=""><small>Legal</small></a>
-    <a href=""><small>Privacy Policy</small></a>
-    <a href=""><small>Terms of Service</small></a>
-    <a href=""><small>Contact Us</small></a>
-    <a href=""><small>Cookie Settings</small></a>
-    <a href=""><small>Cookie Policy</small></a>
-   
-</div>
-<div class="sen title"><h4>STACK EXCHANGE NETWORK</h4>
-
-    <a href=""><small>Technology</small></a>
-    <a href=""><small>Culture & recreation</small></a>
-    <a href=""><small>Life & arts</small></a>
-    <a href=""><small>Science</small></a>
-    <a href=""><small>Professional</small></a>
-    <a href=""><small>Business</small></a>
-    <a href=""><small></small></a>
-    <a href=""><small>API</small></a>
-    <a href=""><small>Data</small></a>
-</div>
-
-<div class="footright">
-    <div class="social">
-        <span>Blog</span>
-        <span>Facebook</span>
-        <span>Twitter</span>
-        <span>LinkedIn</span>
-        <span>Instagram</span>
-    </div>
-    
-<div class="footxt">
-    site design / logo © 2022 Stack Exchange Inc; user<br> contributions licensed under cc by-sa.<br> rev 2022.2.4.41374
-</div>
-
-
-</div>
-        </div>
-
-
-
-
-    </body>
-
+         </div>
+      </div>
+      <div class="footer">
+         <div class="logos">
+            <span class="icon1 baseline">
+               <svg aria-hidden="true" class="svg-icon iconLogoGlyphMd native" width="32" height="37" viewBox="0 0 32 37">
+                  <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
+                  <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"></path>
+               </svg>
+            </span>
+         </div>
+         <div class="stack title">
+            <h4>STACK OVERFLOW</h4>
+            <a href=""><small>Questions</small></a>
+            <a href=""><small>Jobs</small></a>
+            <a href=""><small>Developer Jobs Directory</small></a>
+            <a href=""><small>Salary Calculator</small></a>
+            <a href=""><small>Help</small></a>
+            <a href=""><small>Mobile</small></a>
+            <a href=""><small>Disable Responsiveness</small></a>
+         </div>
+         <div class="prod title">
+            <h4>PRODUCTS</h4>
+            <a href=""><small>Teams</small></a>
+            <a href=""><small>Talent</small></a>
+            <a href=""><small>Advertising</small></a>
+            <a href=""><small>Enterprise</small></a>
+         </div>
+         <div class="comp title">
+            <h4>COMPANY</h4>
+            <a href=""><small>About</small></a>
+            <a href=""><small>Press</small></a>
+            <a href=""><small>Work Here</small></a>
+            <a href=""><small>Legal</small></a>
+            <a href=""><small>Privacy Policy</small></a>
+            <a href=""><small>Terms of Service</small></a>
+            <a href=""><small>Contact Us</small></a>
+            <a href=""><small>Cookie Settings</small></a>
+            <a href=""><small>Cookie Policy</small></a>
+         </div>
+         <div class="sen title">
+            <h4>STACK EXCHANGE NETWORK</h4>
+            <a href=""><small>Technology</small></a>
+            <a href=""><small>Culture & recreation</small></a>
+            <a href=""><small>Life & arts</small></a>
+            <a href=""><small>Science</small></a>
+            <a href=""><small>Professional</small></a>
+            <a href=""><small>Business</small></a>
+            <a href=""><small></small></a>
+            <a href=""><small>API</small></a>
+            <a href=""><small>Data</small></a>
+         </div>
+         <div class="footright">
+            <div class="social">
+               <span>Blog</span>
+               <span>Facebook</span>
+               <span>Twitter</span>
+               <span>LinkedIn</span>
+               <span>Instagram</span>
+            </div>
+            <div class="footxt">
+               site design / logo &copy; 2022 Stack Exchange Inc; user<br> contributions licensed under cc by-sa.<br> rev 2022.2.4.41374
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
